@@ -24,7 +24,7 @@ export async function  POST(request:NextRequest) {
         while(existing){
             
             finalslug=`${sluggedValue}-${count}`
-            let existing = await Blog.findOne({slug:finalslug})
+             existing = await Blog.findOne({slug:finalslug})
             count++
 
         }
