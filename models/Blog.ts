@@ -12,7 +12,7 @@ export interface IBlog{
 
 const blogSchema=new Schema<IBlog>({
     title:{type:String,required:true,minlength:10,maxlength:200},
-    content:{type:String,required:true,minlength:50,maxlength:2000},
+    content:{type:String,required:true,minlength:50,maxlength:20000},
     slug:{type:String,required:true,unique:true},
     author:{type:mongoose.Schema.Types.ObjectId,required:true,ref:'User'},
 

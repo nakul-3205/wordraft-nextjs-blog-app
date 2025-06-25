@@ -44,7 +44,7 @@ export default function WritePage() {
           transition={{ duration: 0.4 }}
           className="max-w-3xl mx-auto bg-zinc-900/70 backdrop-blur-xl border border-zinc-800 p-8 rounded-2xl shadow-xl"
         >
-          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">✍️ Write a Blog</h1>
+          <h1 className="text-3xl md:text-4xl font-bold mb-6 text-purple-400">Write a Blog</h1>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>

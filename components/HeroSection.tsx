@@ -15,7 +15,7 @@ export default function HeroSection() {
         Welcome to <span className="text-purple-500">Wordraft</span>
       </h1>
       <p className="text-zinc-400 text-lg sm:text-xl max-w-2xl mx-auto mb-8">
-        A full-stack blogging platform where ideas meet impact. Built with 💻 by Nakul.
+        A full-stack blogging platform where ideas meet impact. Built by Nakul.
       </p>
 
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
