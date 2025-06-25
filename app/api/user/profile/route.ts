@@ -21,7 +21,7 @@ export async function GET(request:NextRequest){
             }
             return NextResponse.json({
                 user:userData,
-                blog:blogs
+                blogs:blogs
             },
                 {status:200}
             )

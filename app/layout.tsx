@@ -3,6 +3,11 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import CustomSessionProvider from "@/components/session-provider";
 import { ThemeProvider } from "@/components/theme-provider";
+import Navbar from "@/components/Navbar";
+// import { getServerSession } from 'next-auth';
+// import { authOptions } from "@/lib/auth";
+
+// const session=await getServerSession(authOptions)
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +35,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background text-foreground`}
       >
         <CustomSessionProvider>
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
+          <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+             {/* {session && <Navbar />} */}
+            <main className="pt-20 px-4">{children}</main>
+            
           </ThemeProvider>
         </CustomSessionProvider>
       </body>

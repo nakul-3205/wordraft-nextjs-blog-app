@@ -1,10 +1,9 @@
-'use client'
-import React from 'react'
+import HeroSection from '@/components/HeroSection';
 
-function page() {
+export default function HomePage() {
   return (
-    <div>page</div>
-  )
+    <main>
+      <HeroSection />
+    </main>
+  );
 }
-
-export default page

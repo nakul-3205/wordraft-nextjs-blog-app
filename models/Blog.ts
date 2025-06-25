@@ -2,6 +2,7 @@ import mongoose from "mongoose";
 import  { Schema, model, models } from "mongoose";
 
 export interface IBlog{
+    
      title:string,
      content:string,
      slug:string,
